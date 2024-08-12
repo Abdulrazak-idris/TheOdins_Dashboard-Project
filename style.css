@@ -147,6 +147,9 @@ main {
 }
 
 .announcement-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     padding: 1rem;
     background-color: var(--light-color);
     border-radius: 10px;
@@ -172,7 +175,7 @@ main {
 .header_notification,
 .header_logo,
 .header_btn-container,
-.nav {
+.nav, .trending_container {
     display: flex;
     align-items: center;
 }
