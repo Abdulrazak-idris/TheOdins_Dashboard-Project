@@ -58,7 +58,7 @@ a {
 }
 
 aside {
-    grid-template-rows:1fr 5fr;
+    grid-template-rows:110px calc(100vh - 110px);
 }
 
 aside,
@@ -109,6 +109,7 @@ main {
     grid-template-columns: 65% 1fr;
     column-gap: 1rem;
     padding: 1rem;
+    overflow-y: auto;
 }
 
 .project-cards-container {
@@ -188,4 +189,19 @@ main {
 .header_search_bar > input::placeholder {
     font-size: x-small;
     color: black;
+}
+
+.profile {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 1px lightgray;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
